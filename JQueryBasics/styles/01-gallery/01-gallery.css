@@ -1,0 +1,27 @@
+﻿#main-img{
+    height: 450px;
+    width: 650px;
+}
+
+#current{
+    border: 5px solid black;
+}
+
+ul > li > img {
+    height: 100px;
+    width: 200px;
+}
+
+ul {
+    list-style-type: none;
+    margin-left:4%;
+}
+
+ul li{
+    display: inline;
+}
+
+div > div{
+    width: 750px;
+    margin-left: 20%;
+}

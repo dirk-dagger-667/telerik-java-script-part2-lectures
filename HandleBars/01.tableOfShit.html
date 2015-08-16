@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TemplateOfTabel</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="scripts/01.tableOfShit/createTampleteOfTable.js"></script>
+    <div id="container"></div>
+    <script type="text/handlebars-table-template" id="table-template">
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr data-id="row-head">
+                        <th class="columb-head" id="numero">№</th>
+                        <th class="columb-head" id="title">Title</th>
+                        <th class="columb-head" id="{{data1}}">Date #1</th>
+                        <th class="columb-head" id="{{data2}}">Date #2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#lectures}}
+                    <tr class="row" data-id="row-{{id}}">
+                        <td class="columb" id="{{id}}">{{id}}</td>
+                        <td class="columb" id="{{title}}">{{title}}</td>
+                        <td class="columb" id="{{data1}}">{{data2}}</td>
+                        <td class="columb" id="{{data2}}">{{data2}}</td>
+                    </tr>
+                    {{/lectures}}
+                </tbody>
+            </table>
+        </div>
+    </script>
+    
+</body>
+</html>
